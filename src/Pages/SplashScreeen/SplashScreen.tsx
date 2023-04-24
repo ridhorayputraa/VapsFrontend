@@ -1,8 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
 import { Logo } from "../../Assets";
+import { NavigationProp } from "@react-navigation/native";
 
-const SplashScreen = () => {
+const SplashScreen = ({ navigation }:any) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace("signIn");
+    }, 2000);
+  }, []);
+
   return (
     <View style={styles.wraper}>
       <Logo />
