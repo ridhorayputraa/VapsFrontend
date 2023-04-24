@@ -1,14 +1,23 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
+import { IcBack } from "../../../Assets";
 
 type typeHeader = {
   title: string;
   subTitle: string;
+  onBack?: boolean;
 };
 
-const Header = ({ title, subTitle }: typeHeader) => {
+const Header = ({ title, subTitle, onBack }: typeHeader) => {
   return (
     <View style={styles.container}>
+      {onBack && (
+        <TouchableOpacity activeOpacity={0.7}>
+          <View style={styles.back}>
+            <IcBack />
+          </View>
+        </TouchableOpacity>
+      )}
       <View>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.SubTitle}>{subTitle}</Text>
@@ -37,5 +46,10 @@ const styles = StyleSheet.create({
     color: "#8D92A3",
     fontSize: 14,
     fontFamily: "Poppins-Light",
+  },
+  back: {
+    padding: 16,
+    marginRight: 16,
+    marginLeft: -10,
   },
 });

@@ -2,10 +2,10 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Button, Gap, Header, TextInput } from "../../Components";
 
-const SignIn = ({navigation}:any) => {
+const SignIn = ({ navigation }: any) => {
   return (
     <View style={styles.page}>
-      <Header title="Sign In" subTitle="Find your best ever meal" />
+      <Header title="Sign In" subTitle="Find your best Vapor Product" />
       <View style={styles.container}>
         <TextInput
           PlaceHolder="Type your email address"
@@ -17,9 +17,11 @@ const SignIn = ({navigation}:any) => {
         <Button text="Sign In" />
         <Gap height={12} />
         <Button
-
-        onPress={() => navigation.navigate('signUp')}
-        text="Create New Account" textColor="#ffffff" color="#8D92A3" />
+          onPress={() => navigation.navigate("signUp")}
+          text="Create New Account"
+          textColor="#ffffff"
+          color="#8D92A3"
+        />
       </View>
     </View>
   );
