@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { Button, Gap, Header, TextInput } from "../../Components";
+import { Button, Gap, Header, Select, TextInput } from "../../Components";
 
 const SignUpAddress = () => {
   return (
@@ -13,6 +13,7 @@ const SignUpAddress = () => {
         <Gap height={16} />
         <TextInput label="House No." PlaceHolder="Type your house number" />
         <Gap height={16} />
+        <Select />
         <TextInput label="City" PlaceHolder="Type your password" />
         <Gap height={24} />
         <Button text="Continue" />
