@@ -4,8 +4,7 @@ import * as React from "react";
 import { View, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { SignIn, SplashScreen } from "../Pages";
-import SignUp from "../Pages/SignUp/SignUp";
+import { SignIn, SignUp, SignUpAddress, SplashScreen } from "../Pages";
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +24,11 @@ function Router() {
       <Stack.Screen
         name="signUp"
         component={SignUp}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="SignUpAddress"
+        component={SignUpAddress}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
