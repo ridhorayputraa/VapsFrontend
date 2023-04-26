@@ -5,25 +5,15 @@ import { Button, Gap, Header, TextInput } from "../../Components";
 const SignUpAddress = () => {
   return (
     <View style={styles.page}>
-      <Header title="Sign Up" subTitle="Register and Vapss" onBack={true} />
+      <Header title="Address" subTitle="Make sure it’s valid" onBack={true} />
       <View style={styles.container}>
-        {/* Photo Container */}
-        <View style={styles.photo}>
-          <View style={styles.borderPhoto}>
-            <View style={styles.photoContainer}>
-              <Text style={styles.addPhoto}>Add Photo</Text>
-            </View>
-          </View>
-        </View>
-        {/* EndOf Container */}
-        <TextInput label="Full Name" PlaceHolder="Type your full name" />
+        <TextInput label="Phone No." PlaceHolder="Type your phone number" />
         <Gap height={16} />
-        <TextInput
-          label="Email Address"
-          PlaceHolder="Type your email address"
-        />
+        <TextInput label="Address" PlaceHolder="Type your address" />
         <Gap height={16} />
-        <TextInput label="Password" PlaceHolder="Type your password" />
+        <TextInput label="House No." PlaceHolder="Type your house number" />
+        <Gap height={16} />
+        <TextInput label="City" PlaceHolder="Type your password" />
         <Gap height={24} />
         <Button text="Continue" />
       </View>
