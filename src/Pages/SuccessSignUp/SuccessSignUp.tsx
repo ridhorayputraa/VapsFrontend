@@ -21,7 +21,7 @@ const SuccessSignUp = () => {
 };
 
 export default SuccessSignUp;
-
+// All Testing done
 const styles = StyleSheet.create({
   page: {
     flex: 1,
