@@ -19,7 +19,7 @@ const SuccessSignUp = () => {
     </View>
   );
 };
-
+// Init everyting is work
 export default SuccessSignUp;
 // All Testing done
 const styles = StyleSheet.create({
